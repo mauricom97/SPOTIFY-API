@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    
+    <title>API - Spotify</title>
+</head>
+<body>
+    
+    
+    <div class="container">
+        <h1 class="display-2">Escolha seu artista</h1>
+        
+        <input type="text" id="nameArtist" onkeyup="names()" onkeypress="names()" placeholder="Insira o nome do artista" class="form-control mt-4">
+
+        <div id="campArtist">
+            
+        </div>
+        
+    </div>
+    
+    
+</body>
+
+<script src="script.js"></script>
+</html>
+
+<style>
+    
+    body{
+        font-family: Roboto,-apple-system,Helvetica;
+        background-color: black;
+    }
+    .display-2{
+        color: #ffffff;
+    }
+
+    
+    img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 1%;
+
+
+    }
+    h5{
+        color: #030000;
+    }
+
+    small{
+        color: #030000;
+    }
+    ul{
+        background-image: url('https://s3.amazonaws.com/tinycards/image/7d1a8a4485fa8ab7d0d0fc77bc6764f3');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        padding: 2%;
+        margin: 2%;
+        border-radius: 10px;
+        max-width: 350px;
+        border-right-color: coral;
+    }
+    li{
+        position: relative;
+        padding: 2%;
+        margin: 2%;
+        transition-delay: 1.5s
+    }
+
+
+</style>
